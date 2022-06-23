@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-export const Listado = () => {
-  const [listadoState, setListadoState] = useState([]);
+export const Listado = ({ listadoState, setListadoState }) => {
+  // const [listadoState, setListadoState] = useState([]);
 
   useEffect(() => {
     conseguirPeliculas();
