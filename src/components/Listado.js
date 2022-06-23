@@ -45,7 +45,14 @@ export const Listado = ({ listadoState, setListadoState }) => {
                 Borrar
               </button>
               {/*Aparece formulario de editar*/}
-              {editar === peli.id && <Editar />}
+              {editar === peli.id && (
+                <Editar
+                  peli={peli}
+                  conseguirPeliculas={conseguirPeliculas}
+                  setEditar={setEditar}
+                  setListadoState={setListadoState}
+                />
+              )}
             </article>
           );
         })
